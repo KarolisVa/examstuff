@@ -1,0 +1,55 @@
+@import "./fonts.scss";
+html {
+  scroll-behavior: smooth;
+}
+.background {
+  margin-top: 10px;
+  height: 80vh;
+  background-image: url("../images/background1.jpg");
+  background-size: cover;
+  position: relative;
+
+  .fa-arrow-circle-down {
+    color: white;
+    position: absolute;
+    left: calc(50% - 24px);
+    top: 90%;
+    cursor: pointer;
+  }
+  .background-box {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.432);
+    width: auto;
+    padding: 5px;
+    height: 130px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include pureCenter;
+    color: $main-color2;
+    h1 {
+      font-size: 2.9rem;
+    }
+    h2 {
+      font-size: 2.3rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .background {
+    height: calc(80vh - 20px);
+    .fa-arrow-circle-down {
+      top: 80%;
+    }
+    .background-box {
+      min-width: 90%;
+      width: auto;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

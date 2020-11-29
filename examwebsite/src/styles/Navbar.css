@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15vh;
+  position: relative;
+}
+
+nav .logo {
+  font-size: 2.2rem;
+  width: 40%;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+nav ul {
+  width: 44%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.BarLeft {
+  position: absolute;
+  height: 41.5%;
+  background-color: black;
+}
+
+.BarLeft:nth-child(1) {
+  left: 0;
+  top: 0px;
+}
+
+.BarLeft:nth-child(2) {
+  left: 0;
+  top: 33%;
+}
+
+.BarLeft:nth-child(3) {
+  left: 0;
+  top: 67%;
+}
+
+.BarLeft:nth-child(4) {
+  right: 0;
+  top: 0px;
+}
+
+.BarLeft:nth-child(5) {
+  right: 0;
+  top: 33%;
+}
+
+.BarLeft:nth-child(6) {
+  right: 0;
+  top: 67%;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media all and (max-width: 1500px) {
+  nav ul {
+    width: 55%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  nav ul {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .fa-bars {
+    display: block;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 20vh;
+  }
+  nav .logo {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-right: 2px solid black;
+    border-top: 2px;
+    border-bottom: 2px;
+  }
+  nav ul li {
+    border-bottom: 1px solid black;
+  }
+  nav ul li a {
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

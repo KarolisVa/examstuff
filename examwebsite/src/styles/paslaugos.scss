@@ -1,0 +1,69 @@
+@import "./fonts.scss";
+
+.paslaugos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  background-size: cover;
+  padding-bottom: 10px;
+  height: auto;
+  .paslaugos-box {
+    cursor: pointer;
+    height: 310px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    .image {
+      border-radius: 100%;
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
+
+.box-shadow-paslaugos {
+  //box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.choose-who {
+  @include marginMid;
+  margin-top: 40px;
+  height: 8vh;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+  button {
+    height: 40px;
+    width: 90px;
+    border-radius: 3px;
+    border: 2px solid black;
+    font-family: $main-font;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: white;
+    &:hover {
+      background-color: rgb(133, 130, 130);
+    }
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .choose-who {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .choose-who {
+    width: 35%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .choose-who {
+    width: 70%;
+  }
+}

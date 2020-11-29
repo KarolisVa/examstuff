@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+.paslaugos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  background-size: cover;
+  padding-bottom: 10px;
+  height: auto;
+}
+
+.paslaugos .paslaugos-box {
+  cursor: pointer;
+  height: 310px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.paslaugos .paslaugos-box .image {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.box-shadow-paslaugos {
+  -webkit-box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.choose-who {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.choose-who button {
+  height: 40px;
+  width: 90px;
+  border-radius: 3px;
+  border: 2px solid black;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: white;
+}
+
+.choose-who button:hover {
+  background-color: #858282;
+}
+
+@media all and (max-width: 1400px) {
+  .choose-who {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .choose-who {
+    width: 35%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .choose-who {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=paslaugos.css.map */

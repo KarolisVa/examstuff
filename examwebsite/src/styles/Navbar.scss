@@ -1,0 +1,119 @@
+@import "./fonts.scss";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 15vh;
+  position: relative;
+
+  .logo {
+    font-size: 2.2rem;
+    width: 40%;
+    text-align: center;
+    font-family: $main-font;
+  }
+
+  ul {
+    width: 44%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    li {
+      list-style: none;
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $main-color;
+      }
+    }
+  }
+}
+
+.BarLeft {
+  position: absolute;
+  height: 41.5%;
+  background-color: black;
+}
+.BarLeft:nth-child(1) {
+  left: 0;
+  top: 0px;
+}
+.BarLeft:nth-child(2) {
+  left: 0;
+  top: 33%;
+}
+.BarLeft:nth-child(3) {
+  left: 0;
+  top: 67%;
+}
+
+.BarLeft:nth-child(4) {
+  right: 0;
+  top: 0px;
+}
+.BarLeft:nth-child(5) {
+  right: 0;
+  top: 33%;
+}
+.BarLeft:nth-child(6) {
+  right: 0;
+  top: 67%;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media all and (max-width: 1500px) {
+  nav ul {
+    width: 55%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  nav ul {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .fa-bars {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    //height: auto;
+    .logo {
+      font-size: 1.8rem;
+    }
+    ul {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: white;
+      z-index: 1;
+      transform: translateX(-300px);
+      transition: 0.5s;
+      border-right: 2px solid black;
+      border-top: 2px;
+      border-bottom: 2px;
+      li {
+        border-bottom: 1px solid black;
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

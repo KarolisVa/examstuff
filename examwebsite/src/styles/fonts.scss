@@ -1,0 +1,21 @@
+$main-font: "Open Sans Condensed", sans-serif;
+$main-font2: "Nerko One", cursive;
+$main-font3: "Yellowtail", cursive;
+$main-font-weight: 400;
+$main-color: black;
+$main-color2: white;
+
+@mixin marginMid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin pureCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
