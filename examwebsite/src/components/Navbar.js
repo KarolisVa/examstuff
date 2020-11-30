@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 //style
 import "../styles/Navbar.css";
-//components
+//animation
 import BarLeft from "../animations/barLeft";
 import Scissors from "../animations/scissors";
+//animation
 import { motion } from "framer-motion";
+//
 import { MenuItems } from "../MenuItems";
 
 const Navbar = () => {
@@ -41,17 +43,3 @@ const Navbar = () => {
   );
 };
 export default Navbar;
-
-// const [width, setWidth] = useState(window.innerWidth);
-
-// useEffect(() => {
-//   function handleResize() {
-//     setWidth(window.innerWidth);
-//   }
-//   window.addEventListener("resize", handleResize);
-//   console.log(width);
-// });
-
-// const hamburger = () => {
-//   console.log("boom");
-// };
